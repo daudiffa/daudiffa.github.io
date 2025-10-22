@@ -120,8 +120,45 @@ a.contact p {
     margin: 0;
 }
 
-button.project-link {
-    align-self: start
+a.download {
+    background: ivory;
+    border: 2px solid gray;
+    border-radius: 16px;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+a.download:hover {
+    background: lightgray;
+    border-color: darkslategray;
+    color: darkslategray;
+}
+
+a.project-link {
+    align-self: start;
+    background: lightgreen;
+    border: 2px solid green;
+    border-radius: 16px;
+    gap: 8px;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+a.project-link:hover {
+    background: lawngreen;
+    border-color: darkgreen;
+    color: darkgreen;
+}
+
+a.project-link p {
+    margin: 0;
 }
 
 .project-item {
@@ -131,7 +168,7 @@ button.project-link {
     gap: 16px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .project-item {
         flex-direction: column;
     }
