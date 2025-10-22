@@ -2,6 +2,17 @@ body {
     margin: 0;
 }
 
+.container {
+    background-color: lightskyblue;
+}
+
+.container > div {
+    background-color: lightblue;
+    max-width: 960px;
+    padding: 16px;
+    margin: auto;
+}
+
 /* Layout */
 .row {
     display: flex;
@@ -63,7 +74,7 @@ h1, h2, h3, .subtitle {
 }
 
 .about {
-    text-indent: 10%;
+    text-indent: 2em;
 }
 
 .project-description {
