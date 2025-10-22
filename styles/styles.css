@@ -121,7 +121,25 @@ a.contact p {
 }
 
 button.project-link {
-    align-self: start
+    align-self: start;
+    background: lightgreen;
+    border: 2px solid green;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    gap: 8px;
+    padding: 16px;
+}
+
+button.project-link:hover {
+    background: lawngreen;
+    border-color: darkgreen;
+    color: darkgreen;
+}
+
+button.project-link p {
+    margin: 0;
 }
 
 .project-item {
@@ -131,7 +149,7 @@ button.project-link {
     gap: 16px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .project-item {
         flex-direction: column;
     }
