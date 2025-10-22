@@ -120,37 +120,44 @@ a.contact p {
     margin: 0;
 }
 
-button.download {
+a.download {
+    background: ivory;
     border: 2px solid gray;
     border-radius: 16px;
+    color: black;
     padding: 8px 16px;
+    text-decoration: none;
 }
 
-button.download:hover {
+a.download:hover {
     background: lightgray;
     border-color: darkslategray;
     color: darkslategray;
 }
 
-button.project-link {
+a.project-link {
     align-self: start;
     background: lightgreen;
     border: 2px solid green;
     border-radius: 16px;
-    display: flex;
-    align-items: center;
-    font-size: 1em;
     gap: 8px;
     padding: 16px;
+
+    display: flex;
+    align-items: center;
+
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
 }
 
-button.project-link:hover {
+a.project-link:hover {
     background: lawngreen;
     border-color: darkgreen;
     color: darkgreen;
 }
 
-button.project-link p {
+a.project-link p {
     margin: 0;
 }
 
