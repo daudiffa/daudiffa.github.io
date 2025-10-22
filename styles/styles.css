@@ -120,6 +120,18 @@ a.contact p {
     margin: 0;
 }
 
+button.download {
+    border: 2px solid gray;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+button.download:hover {
+    background: lightgray;
+    border-color: darkslategray;
+    color: darkslategray;
+}
+
 button.project-link {
     align-self: start;
     background: lightgreen;
