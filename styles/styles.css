@@ -7,10 +7,13 @@ body {
 }
 
 .container > div {
-    background-color: lightblue;
+    background-color: lightcyan;
     max-width: 960px;
-    padding: 16px;
     margin: auto;
+}
+
+.container > .column > div {
+    padding: 16px;
 }
 
 /* Layout */
@@ -81,10 +84,16 @@ h1, h2, h3, .subtitle {
     margin: 0;
 }
 
+/* Header and footer */
+header, footer {
+    background: powderblue;
+    padding: 32px;
+}
+
 /* Decorated widgets */
 .chip {
-    background: deepskyblue;
-    border: 1px solid deepskyblue;
+    background: skyblue;
+    border: 1px solid skyblue;
     border-radius: 8px;
     flex: 0 1 auto;
     padding: 4px 8px;
@@ -95,7 +104,7 @@ h1, h2, h3, .subtitle {
 }
 
 a.contact {
-    border: 1px solid deepskyblue;
+    border: 1px solid skyblue;
     border-radius: 100px;
     width: 48px;
     height: 48px;
@@ -115,7 +124,7 @@ button.project-link {
 
 .project-item {
     display: flex;
-    border: 1px solid deepskyblue;
+    border: 1px solid skyblue;
     border-radius: 16px;
     gap: 16px;
 }
@@ -141,6 +150,6 @@ img.project-image {
 }
 
 .project-image-container {
-    background: deepskyblue;
+    background: skyblue;
     border-radius: 16px;
 }
