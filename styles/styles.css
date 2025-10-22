@@ -57,10 +57,12 @@ body {
 
 /* Text */
 * {
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 p {
+    font-family: "Trebuchet MS";
+    line-height: 1.5;
     text-align: justify;
 }
 
