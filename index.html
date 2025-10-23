@@ -32,7 +32,15 @@
         </div>
         <div class="column gap-big">
             <h2>Work Samples</h2>
-            <div class="project-item">
+            <div class="tab-row align-center">
+                <button id="programmer-item" class="tab-item" onclick="switchTab('programmer-item')">
+                    <p style="margin:0">Programming</p>
+                </button>
+                <button id="writer-item" class="tab-item" onclick="switchTab('writer-item')">
+                    <p style="margin:0">Writing</p>
+                </button>
+            </div>
+            <div class="project-item programmer-item">
                 <div class="column gap-small">
                     <h3>Card 41</h3>
                     <p class="project-description">A mobile app for playing a card game. Has an online mode connected to Firebase.</p>
@@ -63,7 +71,7 @@
                          alt="A screenshot of a card game being played in Card 41 app"/>
                 </div>
             </div>
-            <div class="project-item">
+            <div class="project-item writer-item">
                 <div class="column gap-small">
                     <h3>Saat Kata Tak Bisa Dirangkai</h3>
                     <p class="project-description">
@@ -132,6 +140,28 @@
 
     </div>
 </div>
+
+<script type="text/javascript">
+    function switchTab(tab) {
+        var i;
+        var items = document.getElementsByClassName("project-item");
+        for (i = 0; i < items.length; i++) {
+            if (items[i].classList.contains(tab)) {
+                items[i].style.display = "flex";
+            } else {
+                items[i].style.display = "none";
+            }
+        }
+
+        var j;
+        var tabs = document.getElementsByClassName("visible-tab-item");
+        for (j = 0; j < tabs.length; j++) {
+            tabs[j].classList.toggle("visible-tab-item");
+        }
+        document.getElementById(tab).classList.add("visible-tab-item");
+    }
+    switchTab("programmer-item");
+</script>
 </body>
 
 </html>

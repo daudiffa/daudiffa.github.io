@@ -166,6 +166,25 @@ a.project-link p {
     text-align: start;
 }
 
+.tab-row {
+    display: flex;
+}
+
+.tab-item {
+    background: lightcyan;
+    border: 1px solid skyblue;
+    padding: 8px 16px;
+}
+
+.visible-tab-item {
+    background: powderblue;
+}
+
+.tab-item > p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
 .project-item {
     display: flex;
     border: 1px solid skyblue;
