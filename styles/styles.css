@@ -170,6 +170,12 @@ a.project-link p {
     display: flex;
 }
 
+@media (scripting: none) {
+  .tab-row {
+    display: none;
+  }
+}
+
 .tab-item {
     background: lightcyan;
     border: 1px solid skyblue;
