@@ -163,6 +163,7 @@ a.project-link:hover {
 
 a.project-link p {
     margin: 0;
+    text-align: start;
 }
 
 .project-item {
@@ -174,7 +175,7 @@ a.project-link p {
 
 @media (max-width: 600px) {
     .project-item {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
