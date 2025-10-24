@@ -156,13 +156,35 @@ a.project-link {
 }
 
 a.project-link:hover {
-    background: lawngreen;
     border-color: darkgreen;
     color: darkgreen;
 }
 
 a.project-link p {
     margin: 0;
+    text-align: start;
+}
+
+.tab-row {
+    display: flex;
+}
+
+@media (scripting: none) {
+  .tab-row {
+    display: none;
+  }
+}
+
+.tab-item {
+    background: lightcyan;
+    border: 1px solid skyblue;
+    margin: 0;
+    font-size: 1.1em;
+    padding: 8px 16px;
+}
+
+.visible-tab-item {
+    background: powderblue;
 }
 
 .project-item {
@@ -174,7 +196,7 @@ a.project-link p {
 
 @media (max-width: 600px) {
     .project-item {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 }
 
@@ -190,6 +212,7 @@ img.project-image {
     max-width: 100%;
     width: auto;
     max-height: 16em;
+    margin: auto;
 }
 
 .project-image-container {
