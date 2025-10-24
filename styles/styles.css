@@ -179,16 +179,13 @@ a.project-link p {
 .tab-item {
     background: lightcyan;
     border: 1px solid skyblue;
+    margin: 0;
+    font-size: 1.1em;
     padding: 8px 16px;
 }
 
 .visible-tab-item {
     background: powderblue;
-}
-
-.tab-item > p {
-    margin: 0;
-    font-size: 1.1em;
 }
 
 .project-item {
@@ -216,6 +213,7 @@ img.project-image {
     max-width: 100%;
     width: auto;
     max-height: 16em;
+    margin: auto;
 }
 
 .project-image-container {
