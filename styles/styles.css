@@ -156,7 +156,6 @@ a.project-link {
 }
 
 a.project-link:hover {
-    background: lawngreen;
     border-color: darkgreen;
     color: darkgreen;
 }
